@@ -1,0 +1,26 @@
+.button {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  cursor: pointer;
+
+  svg path {
+    stroke: var(--ghostsBtn);
+  }
+
+  &_text {
+    position: absolute;
+    top: 31px;
+    left: 37px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--ghostsBtnText);
+  }
+
+  @media (max-width: 768px)  {
+   display: none;
+  }
+}

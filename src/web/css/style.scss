@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--background);
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.swiper {
+  padding-top: 51px;
+  margin-top: -51px;
+
+  @media (min-width: 768px) {
+    padding-top: 118px;
+    margin-top: -118px;
+  }
+}
+
+// Adino & Grahami => ag
+body[data-index='0'] {
+  --background: linear-gradient(
+    136.16deg,
+    rgba(46, 9, 22, 0.97) 12.91%,
+    rgba(32, 10, 43, 0.69) 87.68%
+  );
+
+  --menuColor: #ff5b79;
+
+  --mouseColor: #f8d3eb;
+  --mouseScroll: #ff5b79;
+
+  --bookNowBtn: #ff5b79;
+  --bookNotBtnText: #ffffff;
+
+  --ghostsBtn: #ff5b79;
+  --ghostsBtnText: #ffffff;
+}
+
+// Adino & Grahami => ag
+body[data-index='1'] {
+  --background: linear-gradient(
+    130.02deg,
+    rgba(232, 202, 251, 0.63) 0.66%,
+    rgba(106, 79, 182, 0.46) 83.32%
+  );
+
+  --menuColor: #303056;
+
+  --mouseColor: #303056;
+  --mouseScroll: #325669;
+
+  --bookNowBtn: #ff5b79;
+  --bookNotBtnText: #ffffff;
+
+  --ghostsBtn: #f8d3eb;
+  --ghostsBtnText: #f8f8fd;
+}
+
+// Adino & Grahami => ag
+body[data-index='2'] {
+  --background: linear-gradient(
+    136.16deg,
+    rgba(91, 135, 75, 0.76) 12.91%,
+    #0c3720 87.68%
+  );
+
+  --menuColor: #f8f8fd;
+
+  --mouseColor: #f8f8fd;
+  --mouseScroll: #a7de93;
+
+  --bookNowBtn: #a7de93;
+  --bookNotBtnText: #303056;
+
+  --ghostsBtn: #a7de93;
+  --ghostsBtnText: #ffffff;
+}

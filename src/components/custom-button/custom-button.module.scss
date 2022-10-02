@@ -1,0 +1,30 @@
+.button {
+  position: relative;
+  width: fit-content;
+
+  path {
+    fill: var(--bookNowBtn);
+  }
+
+  &_text {
+    position: absolute;
+    top: 26px;
+    left: 42px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--bookNotBtnText);
+  }
+
+  @media (max-width: 768px) {
+    svg {
+      width: 100px;
+    }
+
+    &_text {
+      top: 28px;
+      left: 20px;
+      font-size: 12px;
+    }
+  }
+}
