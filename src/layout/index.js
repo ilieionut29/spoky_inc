@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/header';
-import MouseScroll from '../components/mouse-scroll';
+import SwipeLeft from '../components/swipe-left';
 import GhostsButton from '../components/ghosts-button';
 
 const Layout = ({ children }) => {
@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
       <Header />
       {children}
       <GhostsButton/>
-      <MouseScroll />
+      <SwipeLeft />
     </>
   );
 };

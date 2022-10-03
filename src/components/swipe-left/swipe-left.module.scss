@@ -1,0 +1,30 @@
+.swipe {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  width: 75px;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  @media (max-height: 992px) {
+    display: none;
+  }
+
+  &_icon {
+    font-size: 38px;
+    color: var(--mouseColor);
+  }
+
+  &_text {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--mouseColor);
+    display: block;
+    text-align: center;
+  }
+}

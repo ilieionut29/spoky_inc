@@ -1,3 +1,245 @@
 .slide_item {
   display: flex;
+  flex-direction: column;
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 12px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(100vh - 118px);
+  }
+}
+
+.image {
+  &_wrapper {
+    position: relative;
+    margin: 0 auto;
+
+    &::after {
+      content: '';
+      background: url('../../assets/images/test.png');
+      width: 410px;
+      height: 380px;
+      top: -90px;
+      left: -66px;
+      background-size: cover;
+      position: absolute;
+      z-index: -1;
+      background-repeat: no-repeat;
+      display: block;
+      animation: ghostSmoke 7s ease-in-out infinite;
+    }
+  }
+
+  &_element {
+    max-width: 300px;
+    width: 100%;
+    height: initial;
+  }
+
+  &_info {
+    .name {
+      font-family: 'Poppins';
+      font-weight: 700;
+      font-size: 20px;
+      display: block;
+      color: var(--slideItemName);
+      text-align: right;
+
+      &_info {
+        font-family: 'Poppins';
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--slideItemInfo);
+        text-align: right;
+        display: block;
+      }
+    }
+    .line {
+      position: absolute;
+      right: 20px;
+      bottom: 120px;
+      width: 90px;
+      height: 1px;
+      background: var(--slideItemLine);
+
+      &::after {
+        content: '';
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--slideItemLine);
+        display: block;
+        position: absolute;
+        top: -2px;
+        left: -1px;
+      }
+
+      &::before {
+        content: '';
+        width: 1px;
+        height: 65px;
+        display: block;
+        background: var(--slideItemLine);
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    &_wrapper {
+      flex: 0 0 50%;
+      margin: initial;
+
+      &::after {
+        width: calc(100% + 60px);
+        height: calc(100% + 0px);
+        animation: ghostSmoke2 6s ease-in-out infinite;
+        top: -175px;
+        left: -66px;
+      }
+    }
+
+    &_element {
+      max-width: 480px;
+    }
+
+    &_info {
+      .name {
+        padding-left: 70px;
+        margin-top: 10px;
+        text-align: left;
+
+        &_info {
+          text-align: left;
+          padding-left: 70px;
+        }
+      }
+      .line {
+        left: 50px;
+        right: initial;
+        width: 120px;
+        bottom: 200px;
+
+        &::before {
+          left: 0;
+          height: 170px;
+        }
+
+        &::after {
+          left: initial;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+.info {
+  max-width: 470px;
+  margin: 12px auto 0 auto;
+
+  &_title {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--slideItemTitle);
+    display: block;
+  }
+
+  &_subtitle {
+    font-family: 'Poppins';
+    font-weight: 900;
+
+    color: var(--slideItemSubtitle);
+    display: block;
+
+    font-size: 40px;
+    line-height: 35px;
+    margin: 12px 0 6px 0;
+  }
+
+  &_text {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--slideItemText);
+    opacity: 0.8;
+  }
+
+  &_btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 24px;
+
+    &_track {
+      display: flex;
+      align-items: center;
+      font-family: 'Poppins';
+      font-weight: 600;
+      font-size: 12px;
+      color: var(--slideItemTrack);
+      cursor: pointer;
+
+      .icon {
+        font-size: 20px;
+        color: var(--slideItemTrackIcon);
+        margin-left: 12px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    max-width: 450px;
+    margin: initial;
+
+    &_title {
+      font-size: 17px;
+    }
+
+    &_subtitle {
+      font-size: 58px;
+      line-height: 63px;
+      margin: 20px 0 12px 0;
+    }
+
+    &_btns {
+      margin-top: 50px;
+    }
+  }
+}
+
+@keyframes ghostSmoke {
+  0% {
+    top: -90px;
+  }
+  50% {
+    top: -120px;
+  }
+  100% {
+    top: -90px;
+  }
+}
+
+@keyframes ghostSmoke2 {
+  0% {
+    top: -175px;
+  }
+  50% {
+    top: -145px;
+  }
+  100% {
+    top: -175px;
+  }
 }

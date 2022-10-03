@@ -13,16 +13,16 @@ const MainSlider = () => {
     document.body.setAttribute('data-index', '0');
   }, []);
 
-  const test = (dataIndex) => {
+  const onSlideChangeHandler = (dataIndex) => {
     document.body.setAttribute('data-index', dataIndex.realIndex);
   };
+
   return (
     <Swiper
       spaceBetween={0}
       slidesPerView={1}
-      onSlideChange={test}
+      onSlideChange={onSlideChangeHandler}
       effect={'coverflow'}
-      grabCursor={true}
       centeredSlides={true}
       coverflowEffect={{
         rotate: 100,
@@ -31,7 +31,12 @@ const MainSlider = () => {
         modifier: 1,
         slideShadows: false,
       }}
-      pagination={true}
+      keyboard={{
+        enabled: true,
+      }}
+      pagination={{
+        clickable: true,
+      }}
       modules={[EffectCoverflow, Pagination]}
     >
       <SwiperSlide>

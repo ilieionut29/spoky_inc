@@ -1,7 +1,7 @@
 import React from 'react';
 
 import images from '../../assets/images';
-import CustomButton from '../custom-button';
+import BookNowButton from '../booknow-button';
 
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import style from './captain_sem.module.scss';
@@ -14,8 +14,8 @@ const CaptainSem = () => {
           className={style.image_element}
           src={images.CaptainSem}
           alt='captain_sem'
-          width={320}
-          height={270}
+          width={480}
+          height={432}
         />
         <div className={style.image_info}>
           <span className={style.name}>Captain Sem</span>
@@ -33,7 +33,7 @@ const CaptainSem = () => {
           hero for all of ghostkind.
         </span>
         <div className={style.info_btns}>
-          <CustomButton text={'Book now'} />
+          <BookNowButton text={'Book now'} />
           <div className={style.info_btns_track}>
             his track record
             <HiOutlineArrowNarrowRight className={style.icon} />

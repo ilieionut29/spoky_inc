@@ -5,6 +5,7 @@
   transform: translateX(-50%);
   width: fit-content;
   cursor: pointer;
+  z-index: 5;
 
   svg path {
     stroke: var(--ghostsBtn);
@@ -20,7 +21,11 @@
     color: var(--ghostsBtnText);
   }
 
-  @media (max-width: 768px)  {
-   display: none;
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  @media (max-height: 992px) {
+    display: none;
   }
 }

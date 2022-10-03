@@ -1,6 +1,7 @@
 .button {
   position: relative;
   width: fit-content;
+  cursor: pointer;
 
   path {
     fill: var(--bookNowBtn);
