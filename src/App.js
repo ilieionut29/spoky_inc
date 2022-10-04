@@ -3,7 +3,7 @@ import MainSlider from './components/main-slider';
 
 import './web/css/style.scss';
 
-function App() {
+const App = () => {
   return (
     <>
       <Layout>

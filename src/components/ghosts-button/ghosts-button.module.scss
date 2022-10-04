@@ -3,29 +3,25 @@
   bottom: 12px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 5;
   width: fit-content;
   cursor: pointer;
-  z-index: 5;
-
+  
   svg path {
     stroke: var(--ghostsBtn);
   }
 
   &_text {
     position: absolute;
-    top: 31px;
+    top: 29px;
     left: 37px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 15px;
     color: var(--ghostsBtnText);
   }
 
-  @media (max-width: 768px) {
-    display: none;
-  }
-
-  @media (max-height: 992px) {
+  @media (max-height: 902px) {
     display: none;
   }
 }

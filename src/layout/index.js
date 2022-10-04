@@ -1,7 +1,8 @@
 import React from 'react';
+
 import Header from '../components/header';
-import SwipeLeft from '../components/swipe-left';
 import GhostsButton from '../components/ghosts-button';
+import SwipeLeft from '../components/swipe-left';
 
 const Layout = ({ children }) => {
   return (

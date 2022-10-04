@@ -16,7 +16,7 @@ const AdinoAndGrahami = () => {
           such a hungry beast. Grahami can't hold any longer his anger to Adino.
         </span>
         <div className={style.info_btns}>
-          <BookNowButton text={'Try now'} />
+          <BookNowButton text={'Check now'} />
           <div className={style.info_btns_track}>
             track record
             <HiOutlineArrowNarrowRight className={style.icon} />

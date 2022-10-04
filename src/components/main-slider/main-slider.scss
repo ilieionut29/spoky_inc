@@ -1,0 +1,27 @@
+.swiper-pagination {
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    &-bullet {
+        width: 4px;
+        height: 4px;
+        background: #F8F8FD;
+        border-radius: 50%;
+        display: block;
+
+        &-active {
+            width: 20px;
+            height: 4px;
+            border-radius: 24px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        bottom: 140px;
+      }
+}

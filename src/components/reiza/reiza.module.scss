@@ -21,7 +21,7 @@
 
     &::after {
       content: '';
-      background: url('../../assets/images/test.png');
+      background: url('../../assets/images/smoke.png');
       width: 410px;
       height: 380px;
       top: -90px;
@@ -182,7 +182,7 @@
     justify-content: space-between;
 
     margin-top: 24px;
-
+    margin-bottom: 36px;
     &_track {
       display: flex;
       align-items: center;

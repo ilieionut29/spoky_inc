@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { EffectCoverflow, Pagination } from 'swiper';
 import 'swiper/css/effect-coverflow';
-// import style from './main-slider.module.scss';
+import './main-slider.scss';
 
 const MainSlider = () => {
   useEffect(() => {

@@ -5,26 +5,21 @@
   width: 75px;
   text-align: center;
 
-  @media (max-width: 768px) {
-    display: block;
-  }
-
-  @media (max-height: 992px) {
-    display: none;
-  }
-
   &_icon {
-    font-size: 38px;
-    color: var(--mouseColor);
+    font-size: 36px;
+    color: var(--swiperColor);
   }
 
   &_text {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
-    color: var(--mouseColor);
+    color: var(--swiperColor);
     display: block;
-    text-align: center;
+  }
+
+  @media (max-height: 902px) {
+    display: none;
   }
 }

@@ -1,6 +1,8 @@
 {
-  "name": "halloween-nft-collection",
-  "version": "0.1.0",
+  "name": "spoky_inc",
+  "version": "0.0.1",
+  "author": "jonu.dev",
+  "description": "SPOKY INC -> Unique halloween NFT collection available from 30 oct on all NFT's platforms",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -9,6 +11,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
+    "react-responsive": "^9.0.0",
     "react-scripts": "5.0.1",
     "sass": "^1.55.0",
     "swiper": "^8.4.2",
