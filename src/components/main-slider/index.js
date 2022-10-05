@@ -3,8 +3,9 @@ import CaptainSem from '../captain-sem';
 import AdinoAndGrahami from '../adino-grahami';
 import Reiza from '../reiza';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
 import { EffectCoverflow, Pagination } from 'swiper';
+
+import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import './main-slider.scss';
 

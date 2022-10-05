@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: space-between;
     height: calc(100vh - 118px);
+    margin-top: -30px;
   }
 }
 
@@ -32,7 +33,7 @@
       align-items: center;
       justify-content: flex-start;
       gap: 10px;
-      font-family: 'Poppins';
+      font-family: 'Poppins', sans-serif;
       font-weight: 700;
       font-size: 20px;
       color: var(--slideItemName);
@@ -43,7 +44,7 @@
       }
 
       &_info {
-        font-family: 'Poppins';
+        font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 16px;
         color: var(--slideItemInfo);
@@ -96,23 +97,32 @@
 
     &_info {
       .name {
+        justify-content: flex-end;
         padding-right: 70px;
         margin-top: 10px;
 
         &_info {
           padding-right: 70px;
+          text-align: right;
         }
       }
+
       .line {
-        width: 120px;
-        bottom: 200px;
-        right: 40px;
+        width: 140px;
+        bottom: 210px;
+        right: 50px;
+        left: initial;
 
         &::before {
           right: 0;
+          left: initial;
           height: 170px;
         }
 
+        &::after {
+          left: 0;
+          right: initial;
+        }
       }
     }
   }
@@ -125,7 +135,7 @@
 
   &::after {
     content: "";
-    background: url("../../assets/images/blur-effect_3.svg");
+    background: url("../../assets/images/element_3.svg");
     background-repeat: no-repeat;
     width: 208px;
     height: 208px;
@@ -138,7 +148,7 @@
 
   &::before {
     content: "";
-    background: url("../../assets/images/blur-effect_4.svg");
+    background: url("../../assets/images/element_4.svg");
     background-repeat: no-repeat;
     width: 389px;
     height: 411px;
@@ -150,7 +160,7 @@
   }
 
   &_title {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 25px;
@@ -161,19 +171,17 @@
   }
 
   &_subtitle {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 900;
-
     color: var(--slideItemSubtitle);
     display: block;
-
     font-size: 40px;
     line-height: 35px;
     margin: 12px 0 6px 0;
   }
 
   &_text {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -217,7 +225,7 @@
     &_track {
       display: flex;
       align-items: center;
-      font-family: 'Poppins';
+      font-family: 'Poppins', sans-serif;
       font-weight: 600;
       font-size: 12px;
       color: var(--slideItemTrack);

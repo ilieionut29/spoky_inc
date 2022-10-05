@@ -1,10 +1,9 @@
 import React from 'react';
-
-import images from '../../assets/images';
 import BookNowButton from '../booknow-button';
-
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
-import { GiPumpkinLantern } from 'react-icons/gi';
+import { BiGhost } from 'react-icons/bi';
+import images from '../../assets/images';
+
 import style from './captain_sem.module.scss';
 
 const CaptainSem = () => {
@@ -19,7 +18,7 @@ const CaptainSem = () => {
           height={432}
         />
         <div className={style.image_info}>
-          <span className={style.name}>hello, i'm Captain Sem <GiPumpkinLantern /> </span>
+          <span className={style.name}>hello, i'm Captain Sem <BiGhost /> </span>
           <span className={style.name_info}>Veteran Spookt Ghost</span>
           <div className={style.line} />
         </div>

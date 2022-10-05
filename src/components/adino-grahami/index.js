@@ -1,9 +1,9 @@
 import React from 'react';
-
-import images from '../../assets/images';
 import BookNowButton from '../booknow-button';
 import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import { RiGhost2Line }  from 'react-icons/ri';
+import images from '../../assets/images';
+
 import style from './adino-grahami.module.scss';
 
 const AdinoAndGrahami = () => {

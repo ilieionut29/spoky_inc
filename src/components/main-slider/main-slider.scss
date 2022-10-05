@@ -1,27 +1,33 @@
 .swiper-pagination {
-    position: absolute;
-    bottom: 24px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    gap: 24px;
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  z-index: 10;
+  cursor: pointer;
 
-    &-bullet {
-        width: 4px;
-        height: 4px;
-        background: #F8F8FD;
-        border-radius: 50%;
-        display: block;
+  &-bullet {
+    width: 6px;
+    height: 6px;
+    background: #f8f8fd;
+    border-radius: 50%;
+    display: block;
 
-        &-active {
-            width: 20px;
-            height: 4px;
-            border-radius: 24px;
-        }
+    &-active {
+      width: 26px;
+      height: 6px;
+      border-radius: 24px;
     }
+  }
 
-    @media (min-width: 768px) {
-        bottom: 140px;
-      }
+  @media (min-width: 768px) {
+    bottom: 140px;
+  }
+
+  @media (max-height: 902px) {
+    bottom: 12px;
+  }
 }

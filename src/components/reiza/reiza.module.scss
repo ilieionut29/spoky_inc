@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: space-between;
     height: calc(100vh - 118px);
+    margin-top: -30px;
   }
 }
 
@@ -31,7 +32,7 @@
       z-index: -1;
       background-repeat: no-repeat;
       display: block;
-      animation: ghostSmoke 7s ease-in-out infinite;
+      animation: ghostSmokeMobile 5s ease-in-out infinite;
     }
   }
 
@@ -42,16 +43,25 @@
   }
 
   &_info {
+    margin: 12px 0 0 0;
+
     .name {
-      font-family: 'Poppins';
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+      font-family: 'Poppins', sans-serif;
       font-weight: 700;
       font-size: 20px;
-      display: block;
       color: var(--slideItemName);
-      text-align: right;
+
+      svg {
+        font-size: 24px;
+        color: #FFB200;
+      }
 
       &_info {
-        font-family: 'Poppins';
+        font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 16px;
         color: var(--slideItemInfo);
@@ -59,11 +69,12 @@
         display: block;
       }
     }
+
     .line {
       position: absolute;
-      right: 20px;
-      bottom: 120px;
-      width: 90px;
+      right: -10px;
+      bottom: 140px;
+      width: 120px;
       height: 1px;
       background: var(--slideItemLine);
 
@@ -82,7 +93,7 @@
       &::before {
         content: '';
         width: 1px;
-        height: 65px;
+        height: 95px;
         display: block;
         background: var(--slideItemLine);
         position: absolute;
@@ -99,7 +110,7 @@
       &::after {
         width: calc(100% + 60px);
         height: calc(100% + 0px);
-        animation: ghostSmoke2 6s ease-in-out infinite;
+        animation: ghostSmokeDesktop 6s ease-in-out infinite;
         top: -175px;
         left: -66px;
       }
@@ -113,7 +124,7 @@
       .name {
         padding-left: 70px;
         margin-top: 10px;
-        text-align: left;
+        justify-content: flex-start;
 
         &_info {
           text-align: left;
@@ -142,10 +153,24 @@
 
 .info {
   max-width: 470px;
-  margin: 12px auto 0 auto;
+  margin: 24px auto 0 auto;
+
+  &::before {
+    content: '';
+    background: url('../../assets/images/element_6.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 40;
+    z-index: -2;
+    opacity: 0.5;
+  }
 
   &_title {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 25px;
@@ -156,24 +181,47 @@
   }
 
   &_subtitle {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 900;
-
     color: var(--slideItemSubtitle);
     display: block;
-
     font-size: 40px;
     line-height: 35px;
     margin: 12px 0 6px 0;
   }
 
   &_text {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: var(--slideItemText);
     opacity: 0.8;
+  }
+
+  &_crypto {
+    display: block;
+    margin: 12px 0;
+
+    &_text {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: var(--slideItemText);
+    }
+
+    &_types {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 12px;
+      margin-top: 6px;
+
+      img {
+        max-width: 24px;
+      }
+    }
   }
 
   &_btns {
@@ -186,7 +234,7 @@
     &_track {
       display: flex;
       align-items: center;
-      font-family: 'Poppins';
+      font-family: 'Poppins', sans-serif;
       font-weight: 600;
       font-size: 12px;
       color: var(--slideItemTrack);
@@ -220,9 +268,9 @@
   }
 }
 
-@keyframes ghostSmoke {
+@keyframes ghostSmokeMobile {
   0% {
-    top: -90px;
+    top: -92px;
   }
   50% {
     top: -120px;
@@ -232,7 +280,7 @@
   }
 }
 
-@keyframes ghostSmoke2 {
+@keyframes ghostSmokeDesktop {
   0% {
     top: -175px;
   }
@@ -241,5 +289,17 @@
   }
   100% {
     top: -175px;
+  }
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
   }
 }
