@@ -32,6 +32,7 @@ body[data-index='0'] {
     content: '';
     background: url('../../assets/images/test.svg');
     background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -64,7 +65,20 @@ body[data-index='0'] {
 
 // Adino & Grahami
 body[data-index='1'] {
-  --background: linear-gradient(130.02deg,rgba(232, 202, 251, 0.63) 0.66%,rgba(106, 79, 182, 0.46) 83.32%);
+  &::after {
+    content: '';
+    background: url('../../assets/images/test_2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+  }
+
+  --background: linear-gradient(130.02deg,rgba(198, 122, 246, 0.712) 0.66%,rgba(106, 79, 182, 0.46) 83.32%);
 
   --menuColor: #303056;
 

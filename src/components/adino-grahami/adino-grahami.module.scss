@@ -28,27 +28,35 @@
 
   &_info {
     .name {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
       font-family: 'Poppins';
       font-weight: 700;
       font-size: 20px;
-      display: block;
       color: var(--slideItemName);
-      text-align: right;
+
+      svg {
+        font-size: 24px;
+        color: #303056;
+      }
 
       &_info {
         font-family: 'Poppins';
         font-weight: 400;
         font-size: 16px;
         color: var(--slideItemInfo);
-        text-align: right;
+        text-align: left;
         display: block;
       }
     }
+
     .line {
       position: absolute;
-      right: 20px;
-      bottom: 120px;
-      width: 90px;
+      left: -20px;
+      bottom: 140px;
+      width: 120px;
       height: 1px;
       background: var(--slideItemLine);
 
@@ -61,17 +69,17 @@
         display: block;
         position: absolute;
         top: -2px;
-        left: -1px;
+        right: -1px;
       }
 
       &::before {
         content: '';
         width: 1px;
-        height: 65px;
+        height: 105px;
         display: block;
         background: var(--slideItemLine);
         position: absolute;
-        right: 0;
+        left: 0;
       }
     }
   }
@@ -112,7 +120,34 @@
 
 .info {
   max-width: 470px;
-  margin: 12px auto 0 auto;
+  margin: 24px auto 0 auto;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: url("../../assets/images/blur-effect_3.svg");
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 208px;
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    opacity: 0.8;
+    animation: scaleRing 15s ease-in-out infinite;
+  }
+
+  &::before {
+    content: "";
+    background: url("../../assets/images/blur-effect_4.svg");
+    background-repeat: no-repeat;
+    width: 389px;
+    height: 411px;
+    position: absolute;
+    bottom: 24px;
+    right: -10px;
+    opacity: 0.3;
+    animation: scaleSmall 45s ease-in-out infinite;
+  }
 
   &_title {
     font-family: 'Poppins';
@@ -144,6 +179,31 @@
     line-height: 24px;
     color: var(--slideItemText);
     opacity: 0.8;
+  }
+
+  &_crypto {
+    display: block;
+    margin: 12px 0;
+
+    &_text {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      color: var(--slideItemText);
+    }
+
+    &_types {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 12px;
+      margin-top: 6px;
+
+      img {
+        max-width: 24px;
+      }
+    }
   }
 
   &_btns {
@@ -188,5 +248,29 @@
     &_btns {
       margin-top: 50px;
     }
+  }
+}
+
+@keyframes scaleRing {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleSmall {
+  0% {
+    transform: scale(1) rotate(0);
+  }
+  50% {
+    transform: scale(0.6) rotate(45deg);
+  }
+  100% {
+    transform: scale(1) rotate(0);
   }
 }
