@@ -1,17 +1,1 @@
-<svg width="208" height="208" viewBox="0 0 208 208" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.4" filter="url(#filter0_b_7_316)">
-<circle cx="104" cy="104" r="84" stroke="url(#paint0_linear_7_316)" stroke-width="40"/>
-</g>
-<defs>
-<filter id="filter0_b_7_316" x="-40" y="-40" width="288" height="288" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feGaussianBlur in="BackgroundImageFix" stdDeviation="20"/>
-<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_7_316"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_7_316" result="shape"/>
-</filter>
-<linearGradient id="paint0_linear_7_316" x1="104" y1="-50.7143" x2="104" y2="155" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FFC1F1" stop-opacity="0.63"/>
-<stop offset="1" stop-color="#F1EED4" stop-opacity="0.29"/>
-</linearGradient>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="208" height="208" fill="none" xmlns:v="https://vecta.io/nano"><g opacity=".4" filter="url(#A)"><circle cx="104" cy="104" r="84" stroke="url(#B)" stroke-width="40"/></g><defs><filter id="A" x="-40" y="-40" width="288" height="288" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0"/><feGaussianBlur stdDeviation="20"/><feComposite in2="SourceAlpha" operator="in"/><feBlend in="SourceGraphic"/></filter><linearGradient id="B" x1="104" y1="-50.714" x2="104" y2="155" gradientUnits="userSpaceOnUse"><stop stop-color="#ffc1f1" stop-opacity=".63"/><stop offset="1" stop-color="#f1eed4" stop-opacity=".29"/></linearGradient></defs></svg>

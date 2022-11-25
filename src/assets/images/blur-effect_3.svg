@@ -1,16 +1,1 @@
-<svg width="1420" height="1200" viewBox="0 0 1420 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f_11_319)">
-<ellipse cx="760.335" cy="665.5" rx="394.335" ry="366.5" fill="url(#paint0_linear_11_319)"/>
-</g>
-<defs>
-<filter id="filter0_f_11_319" x="0.178192" y="-66.8218" width="1520.31" height="1464.64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="182.911" result="effect1_foregroundBlur_11_319"/>
-</filter>
-<linearGradient id="paint0_linear_11_319" x1="418.258" y1="486.504" x2="755.588" y2="967.602" gradientUnits="userSpaceOnUse">
-<stop stop-color="#00F0FF" stop-opacity="0.42"/>
-<stop offset="1" stop-color="#FFE454" stop-opacity="0.22"/>
-</linearGradient>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="1200" fill="none" xmlns:v="https://vecta.io/nano"><g filter="url(#A)"><ellipse cx="760.335" cy="665.5" rx="394.335" ry="366.5" fill="url(#B)"/></g><defs><filter id="A" x=".178" y="-66.822" width="1520.31" height="1464.64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0"/><feBlend in="SourceGraphic"/><feGaussianBlur stdDeviation="182.911"/></filter><linearGradient id="B" x1="418.258" y1="486.504" x2="755.588" y2="967.602" gradientUnits="userSpaceOnUse"><stop stop-color="#00f0ff" stop-opacity=".42"/><stop offset="1" stop-color="#ffe454" stop-opacity=".22"/></linearGradient></defs></svg>

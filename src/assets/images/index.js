@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 
-import AdinoAndGrahami from './adino_grahami.png';
-import Reiza from './reiza.svg';
-import CaptainSem from './captain_sem.svg';
+import AdinoAndGrahami from './adino_grahami_1.webp'
+import Reiza from './reiza_1.webp';
+import CaptainSem from './captain_sem_1.webp';
 
 import Bitcoin from './Bitcoin.svg'
 import Cardano from './Cardano.svg'
