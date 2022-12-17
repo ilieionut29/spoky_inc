@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
     <>
       <Header />
       {children}
-      <GhostsButton/>
+      <GhostsButton />
       <SwipeLeft />
     </>
   );

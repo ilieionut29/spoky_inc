@@ -21,8 +21,8 @@
     margin: 0 auto;
 
     &::after {
-      content: "";
-      background: url("../../assets/images/smoke.webp");
+      content: '';
+      background: url('../../assets/images/smoke.webp');
       width: 410px;
       height: 380px;
       top: -90px;
@@ -50,18 +50,18 @@
       align-items: center;
       justify-content: flex-end;
       gap: 6px;
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-weight: 700;
       font-size: 20px;
       color: var(--slideItemName);
 
       svg {
         font-size: 24px;
-        color: #FFCB42;
+        color: #ffcb42;
       }
 
       &_info {
-        font-family: "Poppins", sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: 400;
         font-size: 16px;
         color: var(--slideItemInfo);
@@ -79,7 +79,7 @@
       background: var(--slideItemLine);
 
       &::after {
-        content: "";
+        content: '';
         width: 5px;
         height: 5px;
         border-radius: 50%;
@@ -91,7 +91,7 @@
       }
 
       &::before {
-        content: "";
+        content: '';
         width: 1px;
         height: 75px;
         display: block;
@@ -157,8 +157,8 @@
   position: relative;
 
   &::after {
-    content: "";
-    background: url("../../assets/images/element_1.svg");
+    content: '';
+    background: url('../../assets/images/element_1.svg');
     background-repeat: no-repeat;
     width: 131px;
     height: 132px;
@@ -170,8 +170,8 @@
   }
 
   &::before {
-    content: "";
-    background: url("../../assets/images/element_2.svg");
+    content: '';
+    background: url('../../assets/images/element_2.svg');
     background-repeat: no-repeat;
     width: 126px;
     height: 152px;
@@ -183,7 +183,7 @@
   }
 
   &_title {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 25px;
@@ -194,7 +194,7 @@
   }
 
   &_subtitle {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 900;
     color: var(--slideItemSubtitle);
     display: block;
@@ -204,7 +204,7 @@
   }
 
   &_text {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -217,7 +217,7 @@
     margin: 12px 0;
 
     &_text {
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
@@ -250,7 +250,7 @@
       z-index: 5;
       display: flex;
       align-items: center;
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-weight: 600;
       font-size: 12px;
       color: var(--slideItemTrack);

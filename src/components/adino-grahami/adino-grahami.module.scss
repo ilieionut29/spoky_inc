@@ -134,8 +134,8 @@
   position: relative;
 
   &::after {
-    content: "";
-    background: url("../../assets/images/element_3.svg");
+    content: '';
+    background: url('../../assets/images/element_3.svg');
     background-repeat: no-repeat;
     width: 208px;
     height: 208px;
@@ -147,8 +147,8 @@
   }
 
   &::before {
-    content: "";
-    background: url("../../assets/images/element_4.svg");
+    content: '';
+    background: url('../../assets/images/element_4.svg');
     background-repeat: no-repeat;
     width: 389px;
     height: 411px;
@@ -194,7 +194,7 @@
     margin: 12px 0;
 
     &_text {
-      font-family: "Poppins", sans-serif;
+      font-family: 'Poppins', sans-serif;
       font-weight: 400;
       font-size: 14px;
       line-height: 24px;
